@@ -1,0 +1,90 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue: #185FA5;
+  --blue-light: #E6F1FB;
+  --blue-hover: #378ADD;
+  --green: #27500A;
+  --green-bg: #EAF3DE;
+  --red: #A32D2D;
+  --red-bg: #FCEBEB;
+  --border: #E5E4E0;
+  --bg: #F8F7F4;
+  --bg2: #F1EFE8;
+  --text: #1A1917;
+  --text2: #5F5E5A;
+  --text3: #9E9D99;
+  --radius: 8px;
+  --radius-sm: 5px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a { color: inherit; text-decoration: none; }
+
+.btn {
+  padding: 7px 14px;
+  font-size: 13px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: 0.5px solid var(--border);
+  background: white;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.15s;
+  font-weight: 500;
+}
+.btn:hover { background: var(--bg2); }
+.btn-primary { background: var(--blue); border-color: var(--blue); color: white; }
+.btn-primary:hover { background: var(--blue-hover); }
+.btn-danger { background: var(--red-bg); border-color: #F09595; color: var(--red); }
+
+.card {
+  background: white;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.badge-new { background: var(--green-bg); color: var(--green); }
+.badge-done { background: var(--bg2); color: var(--text2); }
+.badge-cancelled { background: var(--red-bg); color: var(--red); }
+.badge-active { background: var(--green-bg); color: var(--green); }
+.badge-inactive { background: var(--red-bg); color: var(--red); }
+
+input, select, textarea {
+  width: 100%;
+  font-size: 13px;
+  padding: 8px 10px;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: white;
+  color: var(--text);
+  outline: none;
+  font-family: inherit;
+}
+input:focus, select:focus, textarea:focus { border-color: var(--blue); }
+textarea { resize: vertical; min-height: 80px; }
+
+label {
+  display: block;
+  font-size: 12px;
+  color: var(--text2);
+  margin-bottom: 5px;
+}
+
+.field { margin-bottom: 12px; }
