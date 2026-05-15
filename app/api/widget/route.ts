@@ -97,7 +97,7 @@ const WIDGET_CODE = `
     '.bp-hstatus { font-size: 11px; color: rgba(255,255,255,0.8); margin-top: 1px; }',
     '.bp-hclose { margin-left: auto; cursor: pointer; background: rgba(255,255,255,0.15); border: none; color: white; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; transition: background 0.2s; flex-shrink: 0; line-height: 1; }',
     '.bp-hclose:hover { background: rgba(255,255,255,0.3); }',
-    '#bp-msgs { flex: 1; overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-height: 200px; }',
+    '#bp-msgs { flex: 1 !important; overflow-y: auto !important; padding: 14px !important; display: flex !important; flex-direction: column !important; gap: 10px !important; min-height: 200px !important; align-items: flex-start !important; justify-content: flex-start !important; }',
     '.bp-msg { max-width: 75%; font-size: 13px; line-height: 1.6; padding: 10px 14px; border-radius: 14px; word-break: normal; white-space: normal; }',
     '.bp-bot { background: #F1EFE8; color: #1A1917; align-self: flex-start; border-bottom-left-radius: 3px; }',
     '.bp-user { background: '+COLOR+'; color: white; align-self: flex-end; border-bottom-right-radius: 3px; }',
