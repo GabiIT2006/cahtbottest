@@ -243,7 +243,7 @@ const WIDGET_CODE = `
       state.name = val; state.step = 'phone'
       addMsg('Danke, '+val.split(' ')[0]+'! Ihre Telefonnummer bitte?')
     } else if (state.step === 'phone') {
-      if (val.replace(/[\s\-\+\(\)]/g,'').length < 8) { addMsg('Bitte gültige Nummer eingeben.'); return }
+      if (val.replace(/[^0-9]/g,'').length < 8) { addMsg('Bitte gültige Nummer eingeben.'); return }
       state.phone = val; state.step = 'service'
       addMsg('Welche Leistung wünschen Sie?')
       showChoices(config.services.map(function(s){ return s.name }), function(svc){
