@@ -98,7 +98,7 @@ const WIDGET_CODE = `
     '.bp-hclose { margin-left: auto; cursor: pointer; background: rgba(255,255,255,0.15); border: none; color: white; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; transition: background 0.2s; flex-shrink: 0; line-height: 1; }',
     '.bp-hclose:hover { background: rgba(255,255,255,0.3); }',
     '#bp-msgs { flex: 1; overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-height: 200px; }',
-    '.bp-msg { max-width: 80%; font-size: 13px; line-height: 1.6; padding: 14px 17px; border-radius: 14px; word-wrap: break-word; }',
+    '.bp-msg { max-width: 75%; font-size: 13px; line-height: 1.6; padding: 10px 14px; border-radius: 14px; word-break: normal; white-space: normal; }',
     '.bp-bot { background: #F1EFE8; color: #1A1917; align-self: flex-start; border-bottom-left-radius: 3px; }',
     '.bp-user { background: '+COLOR+'; color: white; align-self: flex-end; border-bottom-right-radius: 3px; }',
     '.bp-confirm { background: #EAF3DE; color: #27500A; align-self: flex-start; border-bottom-left-radius: 3px; border: 0.5px solid #C0DD97; }',
