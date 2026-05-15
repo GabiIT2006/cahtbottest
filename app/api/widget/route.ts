@@ -355,7 +355,7 @@ export async function GET(req: NextRequest) {
   return new NextResponse(WIDGET_CODE, {
     headers: {
       'Content-Type': 'application/javascript',
-      'Cache-Control': 'no-cache',
+      'Cache-Control': 'no-store, no-cache, must-revalidate',
       'Access-Control-Allow-Origin': '*',
     }
   })
